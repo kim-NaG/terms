@@ -1,0 +1,95 @@
+@charset 'utf-8';
+
+* {
+	margin: 0px;
+	padding: 0px;
+    letter-spacing: -.025em;
+    line-height: calc(32px / 1.1);
+    word-break: keep-all;
+    color: #444;
+}
+ul, ol {
+	/* list-style: none; */
+}
+a {
+	text-decoration: none;
+}
+
+    hr {
+        margin: 1.8em 0;
+        border: 0;
+        border-top: .02em solid #ccc;
+    }
+    body { margin: 0 auto; }
+
+
+    .termsWrap {
+        box-sizing: border-box;
+        width: 100%;
+        padding: 5%;
+    }
+    .item {
+        padding: 1rem 0;
+    }
+
+    h1.title {
+        font-size: 2em;
+        font-weight: 700;
+        line-height: 1.334;
+        margin: .67em 0 3em;
+    }
+    h2.txt_h2 {
+        font-size: 1.6rem;
+        font-weight: 700;
+        line-height: 1.4;
+        margin: .83em 0;
+    }
+    h3.txt_h3 { 
+        font-size: 1rem;
+        font-weight: 700;
+        line-height: 1.8;
+        margin: 1.8em 0 0;
+    }
+    .txt_h4 {
+        font-size: .9em;
+        padding: 2em 0 .8em;
+        /* margin-inline-start: 1ch; */
+    }
+    span {
+        font-size: .8rem;
+        font-weight: 600;
+    }
+    p {
+        font: .85rem/ 1.8 "Malgun Gothic";
+    }
+    .sentence {
+        padding: 1em 0;
+    }
+    li { 
+        clear: both;
+        position: relative; 
+        font: .85rem/ 1.8 "Malgun Gothic"; 
+        list-style: none; 
+        /* list-style-position: inside; */
+    }
+
+    .type1 li { list-style-type: none; margin-inline-start: 0ch;}
+    .type2 li { list-style-type: square; margin-inline-start: 2ch; }
+    .type3 li { list-style-type: disc; margin-inline-start: 2ch; }
+    .type4 li { list-style-type: inside; margin-inline-start: 2ch; }
+    .type5 li { list-style-type: circle; margin-inline-start: 1ch  }
+    .type6 li { list-style-type: none; margin-inline-start: 1ch;}
+    
+    .point { 
+        position: relative; 
+    }
+    .point::before { 
+        content:''; 
+        position: absolute; 
+        bottom: .05em; 
+        left: 0; 
+        width: 100%; 
+        height: 40%; 
+        background-color: rgba(187 231 151 /.5); 
+        z-index: -1;
+    }
